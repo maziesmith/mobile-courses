@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" type="text/css" href="css/ionic.css">
+   <title>Mobile Courses Example</title>
+
+   <script type="text/javascript" src="js/jquery.js"></script>
+   <script type="text/javascript">
+   $(document).ready(function()
+   {
+   if (typeof(Storage) !== "undefined") {
+	  document.getElementById("localValue").innerHTML = localStorage.getItem("value");
+   }
+   $("#set").click(function(){
+		if (typeof(Storage) !== "undefined") {
+			// Store
+			localStorage.setItem("value", $('#value').val());
+			// Retrieve
+			document.getElementById("localValue").innerHTML = localStorage.getItem("value");
+		} else {
+			document.getElementById("localValue").innerHTML = "Sorry, your browser does not support Web Storage...";
+		}
+	});
+   });
+   </script>
+   <style>
+   span#localValue {
+		background: #f3f3f3;
+		font-weight: bold;
+		font-size: 1.1em;
+   }
+   </style>
+  </head>
+  <body>
+   <div class="bar bar-header bar-positive" style="margin-bottom:80px;">
+   <a href="index.html" class="button button-clear">Home</a>
+
+   <h1 class="title">Local Storage</h1>
+   <a class="button button-clear" href="readjson.html">Read JSON</a>
+   </div><br/><br/>
+   <div style='padding: 10px; border: 1px navy solid; margin: 8px;'>
+   Current Local Storage: 
+   <span id="localValue"></span>
+   </div>
+   <form id="localStorageForm">
+   <div class="list">
+   <div class="item">
+   <label>New Value to Store:</label>
+   <input type="text" id="value" value=""/>
+   </div>
+   <div class="item">
+   <input type="button" id="set" class="button button-block" value="Set Local Storage"/>
+   </div>
+   </div>
+   </form>
+  </body>
+
+</html>
