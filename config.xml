@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.mafh97.mobilecourses" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.mafh97.mobilecourses" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" versionCode="1">
     <name>Mobile Courses Example</name>
     <description>
         Sample App with JQuery+PHP+MySQL for mobile platforms.
@@ -8,6 +8,7 @@
         Miguel Figaredo
     </author>
     <content src="index.html" />
+	<gap:plugin name="cordova-plugin-whitelist" source="npm" />	
     <access origin="*" />
 	<allow-navigation href="http://coursesapp.epizy.com/mobile-courses/api/*" />
     <icon src="courses.png" />
