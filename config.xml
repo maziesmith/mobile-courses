@@ -4,12 +4,12 @@
     <description>
         Sample App with JQuery+PHP+MySQL for mobile platforms.
     </description>
-    <author email="mfigaredo@gmail.com" href="https://github.com/mfigaredo/mobile-courses">
+    <author email="mfigaredo@gmail.com" href="https://github.com/mfigaredo">
         Miguel Figaredo
     </author>
     <content src="index.html" />
-    <access origin="*" />
     <gap:plugin name="cordova-plugin-whitelist" spec="~1.3.2" source="npm"/>
+    <access origin="*" />
     <allow-navigation href="*" />
     <icon src="courses.png" />
 </widget>
