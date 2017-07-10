@@ -2,10 +2,10 @@
 <widget id="com.mafh97.mobilecourses" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Mobile Courses Example</name>
     <description>
-        A blank PhoneGap app.
+        Sample App with JQuery+PHP+MySQL for mobile platforms.
     </description>
-    <author email="mfigaredo@gmail.com" href="http://phonegap.com">
-        Mike Fig.
+    <author email="mfigaredo@gmail.com" href="https://github.com/mfigaredo/mobile-courses">
+        Miguel Figaredo
     </author>
     <content src="index.html" />
     <access origin="*" />
