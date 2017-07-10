@@ -14,6 +14,7 @@
  {
  // var url="./api/json.php";
  var url = apiUrl + "json.php";
+ $('#source').html('from API: ' + url);
  $.getJSON(url,function(result){
  console.log(result);
  $.each(result, function(i, field){
@@ -34,5 +35,6 @@
  </div><br/><br/>
  <ul class="list" id="listview">
  </ul>
+  <div id="source"></div>
 </body>
 </html>
