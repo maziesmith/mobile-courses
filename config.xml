@@ -9,6 +9,7 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+	<allow-navigation href="http://coursesapp.epizy.com/mobile-courses/api/*" />
     <icon src="courses.png" />
 
 </widget>
